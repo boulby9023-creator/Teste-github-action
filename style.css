@@ -1,0 +1,47 @@
+:root{
+    --primary-color: #007BFF;
+    --secondary-color: #f0f0f0;
+    --accent-color: #333;
+}
+body{
+    background-color: var(--secondary-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.entete{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.menu_list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+.menu_item a{
+    text-decoration: none;
+    color: #333;
+    border: #333 1px solid;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    box-shadow: 5px 2px 5px var(--accent-color);
+}
+
+.menu_item a:hover{
+    background-color: var(--primary-color);
+    box-shadow: none;
+}
+
+.logo{
+    width: clamp(100px, 20vw, 200px);
+    height: auto;
+}
+
+.hero{
+    margin-top: 20px;
+}
